@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syeda Haqana Ahmed | Business Analyst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0ea5e9 100%);
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-navy-800">SHA</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-teal-500 transition">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-teal-500 transition">About</a>
+                    <a href="#projects" class="text-gray-700 hover:text-teal-500 transition">Projects</a>
+                    <a href="#resume" class="text-gray-700 hover:text-teal-500 transition">Resume</a>
+                    <a href="#contact" class="text-gray-700 hover:text-teal-500 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-700">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-teal-500 transition">Home</a>
+            <a href="#about" class="block py-2 text-gray-700 hover:text-teal-500 transition">About</a>
+            <a href="#projects" class="block py-2 text-gray-700 hover:text-teal-500 transition">Projects</a>
+            <a href="#resume" class="block py-2 text-gray-700 hover:text-teal-500 transition">Resume</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-teal-500 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white pt-24 pb-20 md:pt-32 md:pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Syeda Haqana Ahmed</h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6">Business Analyst | Insight-Driven | Strategic Thinker</h2>
+                    <p class="text-lg mb-8 max-w-lg">Transforming complex data into actionable business insights that drive decision-making and operational excellence.</p>
+                    <div class="flex space-x-4">
+                        <a href="#projects" class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-lg font-medium transition">View My Work</a>
+                        <a href="#resume" class="border-2 border-white hover:bg-white hover:text-navy-800 text-white px-6 py-3 rounded-lg font-medium transition">Download Resume</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
+                    <div class="bg-white p-1 rounded-full shadow-xl">
+                        <img src="Profile pic.jpeg" alt="Professional portrait" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12 text-navy-800" data-aos="fade-up">About Me</h2>
+            
+            <div class="md:flex items-start space-x-0 md:space-x-12">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold mb-4 text-navy-800">My Professional Journey</h3>
+                    <p class="text-gray-600 mb-6">With over 2 years of experience in business analysis, I specialize in bridging the gap between data and business strategy. My journey began in financial analysis before transitioning to broader business operations, where I discovered my passion for turning complex data into clear, actionable insights.</p>
+                    <p class="text-gray-600">I thrive in collaborative environments where I can work with stakeholders across departments to identify opportunities, streamline processes, and implement data-driven solutions that deliver measurable business value.</p>
+                </div>
+                
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold mb-6 text-navy-800">Key Skills & Tools</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                            <i data-feather="bar-chart-2" class="text-teal-500 w-8 h-8 mb-3"></i>
+                            <h4 class="font-semibold mb-2">Data Analysis</h4>
+                            <p class="text-gray-600 text-sm">Extracting insights from complex datasets to inform business decisions</p>
+                        </div>
+                        <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                            <i data-feather="trending-up" class="text-teal-500 w-8 h-8 mb-3"></i>
+                            <h4 class="font-semibold mb-2">Business Process Optimization</h4>
+                            <p class="text-gray-600 text-sm">Identifying inefficiencies and implementing improvements</p>
+                        </div>
+                        <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                            <i data-feather="users" class="text-teal-500 w-8 h-8 mb-3"></i>
+                            <h4 class="font-semibold mb-2">Stakeholder Communication</h4>
+                            <p class="text-gray-600 text-sm">Translating technical findings into business language</p>
+                        </div>
+                        <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                            <i data-feather="clipboard" class="text-teal-500 w-8 h-8 mb-3"></i>
+                            <h4 class="font-semibold mb-2">Requirements Gathering</h4>
+                            <p class="text-gray-600 text-sm">Eliciting and documenting business needs effectively</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-4 text-navy-800">Technical Toolbox</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">Excel</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">SQL</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">Power BI</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">Tableau</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">JIRA</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">Confluence</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">SAP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12 text-navy-800" data-aos="fade-up">Featured Projects</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg relative" data-aos="zoom-in">
+                    <img src="http://static.photos/technology/640x360/1" alt="Project dashboard" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-navy-800">Retail Sales Optimization</h3>
+                        <p class="text-gray-600 mb-4">Identified underperforming product categories and recommended inventory adjustments that increased sales by 18%.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 rounded text-xs">Power BI</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded text-xs">SQL</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded text-xs">Market Basket Analysis</span>
+                        </div>
+                        <a href="#" class="text-teal-500 font-medium inline-flex items-center">View Case Study <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg relative" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="http://static.photos/finance/640x360/2" alt="Financial dashboard" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-navy-800">Financial Process Automation</h3>
+                        <p class="text-gray-600 mb-4">Automated monthly reporting processes, reducing manual work by 35 hours per month and improving accuracy.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 rounded text-xs">Python</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded text-xs">Excel VBA</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded text-xs">Process Mapping</span>
+                        </div>
+                        <a href="#" class="text-teal-500 font-medium inline-flex items-center">View Case Study <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg relative" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="http://static.photos/office/640x360/3" alt="CRM system" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-navy-800">CRM Implementation</h3>
+                        <p class="text-gray-600 mb-4">Led requirements gathering and implementation of new CRM system, improving customer data visibility by 40%.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 rounded text-xs">Salesforce</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded text-xs">User Stories</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded text-xs">UAT Coordination</span>
+                        </div>
+                        <a href="#" class="text-teal-500 font-medium inline-flex items-center">View Case Study <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center text-navy-800 font-medium hover:text-teal-500 transition">
+                    View All Projects
+                    <i data-feather="chevron-right" class="ml-1 w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12 text-navy-800" data-aos="fade-up">My Resume</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-navy-800 text-white p-8">
+                        <div class="text-center mb-8">
+                            <img src="Profile pic.jpeg" alt="Professional portrait" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-white">
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Syeda Haqana Ahmed</h3>
+                        <p class="mb-6">Senior Business Analyst</p>
+                        
+                        <div class="mb-8">
+                            <h4 class="font-semibold mb-3 text-teal-300">Contact</h4>
+                            <div class="space-y-2">
+                                <p class="flex items-center"><i data-feather="mail" class="mr-2 w-4 h-4"></i> syedahaqana1@gmail.com</p>
+                                <p class="flex items-center"><i data-feather="phone" class="mr-2 w-4 h-4"></i> 0340-2567521</p>
+                                <p class="flex items-center"><i data-feather="map-pin" class="mr-2 w-4 h-4"></i> Karachi,Pakistan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <h4 class="font-semibold mb-3 text-teal-300">Skills</h4>
+                            <ul class="space-y-2">
+                                <li>Data Analysis & Visualization</li>
+                                <li>Business Process Improvement</li>
+                                <li>Requirements Elicitation</li>
+                                <li>Stakeholder Management</li>
+                                <li>Agile Methodologies</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold mb-3 text-teal-300">Certifications</h4>
+                            <ul class="space-y-2">
+                                <li>CBAP - Certified Business Analysis Professional</li>
+                                <li>PMI-PBA - Professional in Business Analysis</li>
+                                <li>Tableau Desktop Certified</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-2/3 p-8">
+                        <div class="mb-10">
+                            <h3 class="text-xl font-bold text-navy-800 mb-4 border-b pb-2">Professional Experience</h3>
+                            
+                            <div class="mb-6">
+                                <h4 class="font-semibold text-lg">Senior Business Analyst</h4>
+                                <p class="text-gray-600">XYZ Corporation | 2020 - Present</p>
+                                <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-700">
+                                    <li>Led cross-functional team to implement new ERP system, resulting in 30% process efficiency gains</li>
+                                    <li>Developed predictive models that reduced inventory costs by $1.2M annually</li>
+                                    <li>Created executive dashboards that improved decision-making speed by 40%</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <h4 class="font-semibold text-lg">Business Analyst</h4>
+                                <p class="text-gray-600">ABC Financial Services | 2017 - 2020</p>
+                                <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-700">
+                                    <li>Automated monthly financial reporting, saving 25 hours per month</li>
+                                    <li>Identified $500K in cost savings through spend analysis</li>
+                                    <li>Facilitated requirements sessions for new loan processing system</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-navy-800 mb-4 border-b pb-2">Education</h3>
+                            <div class="mb-4">
+                                <h4 class="font-semibold">Bachelors of Science in Computational Finance </h4>
+                                <p class="text-gray-600">NED University of Engineering & Technology | 2021 - 2025 </p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Intermediate (Pre Engineering)</h4>
+                                <p class="text-gray-600">Gov.Degree College For Women Nazimabad | 2019 - 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="#" class="inline-flex items-center bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-lg font-medium transition">
+                    <i data-feather="download" class="mr-2 w-5 h-5"></i>
+                    Download Full Resume (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12 text-navy-800" data-aos="fade-up">Get In Touch</h2>
+            
+            <div class="md:flex justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold mb-6 text-navy-800">Let's Connect</h3>
+                    <p class="text-gray-600 mb-8 max-w-md">I'm always interested in hearing about new opportunities, collaborations, or just chatting about business analysis. Feel free to reach out!</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-teal-100 p-3 rounded-full mr-4">
+                                <i data-feather="mail" class="text-teal-500 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Email Me</h4>
+                                <p class="text-gray-600">syedahaqana1@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-teal-100 p-3 rounded-full mr-4">
+                                <i data-feather="phone" class="text-teal-500 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Call Me</h4>
+                                <p class="text-gray-600">0340-2567521</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-teal-100 p-3 rounded-full mr-4">
+                                <i data-feather="map-pin" class="text-teal-500 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Location</h4>
+                                <p class="text-gray-600">Karachi,Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-4">Connect on Social</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition">
+                                <i data-feather="linkedin" class="text-navy-800 w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition">
+                                <i data-feather="twitter" class="text-navy-800 w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full transition">
+                                <i data-feather="github" class="text-navy-800 w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <form class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-lg font-medium transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-800 text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="flex justify-center md:justify-start mb-6 md:mb-0">
+                    <span class="text-xl font-bold">Syeda Haqana Ahmed</span>
+                </div>
+                
+                <div class="flex justify-center md:justify-end space-x-6">
+                    <a href="#" class="text-gray-300 hover:text-white transition">
+                        <i data-feather="www.linkedin.com/in/
+syeda-haqana-s521
+" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition">
+                        <i data-feather="twitter" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition">
+                        <i data-feather="github" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center md:text-left">
+                <p class="text-gray-300 text-sm">&copy; 2025 Syeda Haqana Ahmed. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+    
+    <script>AOS.init();</script>
+    <script>feather.replace();</script>
+</body>
+</html>
